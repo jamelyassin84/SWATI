@@ -16,11 +16,11 @@ export class ProductsComponent implements OnInit {
 
 	products: any[] = []
 
-	productsToShow = ['Lense', 'Make-up', 'Lashes', 'Serum']
+	productsToShow = ['Lenses', 'Make-ups', 'Lashes', 'Serums']
 	getProducts() {
 		this.productsToShow.forEach((category: string) => {
 			new BaseService(this.service.http, EndPoints.products, '')
-				.create({
+				.post({
 					limit: 1,
 					skipFirst: 0,
 					search: category,

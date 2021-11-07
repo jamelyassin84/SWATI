@@ -37,7 +37,7 @@ export class BaseService {
 		return this.http.get<any>(url, this.headers())
 	}
 
-	create(data: Object) {
+	post(data: Object) {
 		const url = `${environment.api}${this.url}`
 		return this.http.post<any>(url, data, this.headers())
 	}

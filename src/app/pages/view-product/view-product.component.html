@@ -4,20 +4,17 @@
     <div class="row">
         <div class="col-md-12 mt-5">
             <div class="imge-container">
-                <img class="w-100" src="../../../assets/images/all.png" alt="">
+                <img [src]="categoryInfo.media.full" alt="">
             </div>
         </div>
-        <div class="col-md-6 mt-5">
-            <h1>COLORED LENSES</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis non hic vero repellat officia molestiae minima eius perspiciatis, eos debitis? Repellendus, nam? Soluta ea, ex sequi dicta nisi vero labore! Lorem, ipsum dolor sit amet consectetur
-                adipisicing elit. Blanditiis non hic vero repellat officia molestiae minima eius perspiciatis, eos debitis? Repellendus, nam? Soluta ea, ex sequi dicta nisi vero labore!</p>
+        <div class="col-md-8 mt-5">
+            <h1>{{category | titlecase}}</h1>
+            <p> {{categoryInfo.description}}</p>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3" *ngFor="let item of [1,2,3,4]">
-                <app-item-card></app-item-card>
-            </div>
+    <div class="row">
+        <div class="col-md-3" *ngFor="let data of products">
+            <app-item-card [image]="data.media.full" [title]="data.name"></app-item-card>
         </div>
     </div>
 </div>
