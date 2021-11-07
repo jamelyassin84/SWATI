@@ -12,9 +12,9 @@
             <p> {{categoryInfo.description}}</p>
         </div>
     </div>
-    <div class="row">
+    <div class="row mb-5">
         <div class="col-md-3" *ngFor="let data of products">
-            <app-item-card [image]="data.media.full" [title]="data.name"></app-item-card>
+            <app-item-card-with-price [desc]="data.excerpt" [price]="data.priceAsNumber" [origPrice]="data.priceBeforeDiscountAsNumber" [image]="data.media.full" [title]="data.name" [route]="data.product"></app-item-card-with-price>
         </div>
     </div>
 </div>

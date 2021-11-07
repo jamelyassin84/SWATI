@@ -14,7 +14,8 @@ import { HomeComponent } from './pages/home/home.component'
 import { ViewProductComponent } from './pages/view-product/view-product.component'
 import { ItemComponent } from './pages/item/item.component'
 import { BannerComponent } from './components/banner/banner.component'
-import { ItemCardComponent } from './components/item-card/item-card.component'
+import { ItemCardComponent } from './components/item-card/item-card.component';
+import { ItemCardWithPriceComponent } from './components/item-card-with-price/item-card-with-price.component'
 
 @NgModule({
 	declarations: [
@@ -30,6 +31,7 @@ import { ItemCardComponent } from './components/item-card/item-card.component'
 		HomeComponent,
 		BannerComponent,
 		ItemCardComponent,
+  ItemCardWithPriceComponent,
 	],
 	imports: [BrowserModule, AppRoutingModule, HttpClientModule],
 	providers: [],

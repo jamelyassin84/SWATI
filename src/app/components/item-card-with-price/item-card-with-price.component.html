@@ -1,0 +1,9 @@
+<div [routerLink]="'/item/'+route | lowercase" title="View More" class="item-card mt-5">
+    <div class="imge-container">
+        <img [src]="image? image:'../../../assets/images/all.png'" alt="">
+    </div>
+    <h5 class="title ">{{title}}</h5>
+    <span class="text-muted m-0 ">{{desc}}</span>
+    <h5 class="title mt-3 m-0 w-100">{{price | currency : ' AED'}} <span *ngIf="origPrice !== price" class="text-muted line-through ml-auto">{{origPrice | currency : ' AED'}}</span></h5>
+
+</div>
