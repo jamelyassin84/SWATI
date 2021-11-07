@@ -1,9 +1,11 @@
 .marquee-image {
+    margin-top: calc(85px + 36px);
     -webkit-animation: background-marquee 100s infinite linear;
     animation: background-marquee 10s infinite linear;
     background-size: contain;
     background-repeat: repeat-x;
     height: 50px;
+    z-index: 9;
     background-image: url(https://images.prismic.io/swati/2c5a8720-9797-4c6a-b104-ef6a74611794_marquee-image.jpg?auto=compress,format&rect=0,0,636,100&w=636&h=100);
 }
 

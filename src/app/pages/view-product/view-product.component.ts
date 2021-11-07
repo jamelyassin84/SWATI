@@ -11,7 +11,9 @@ import { BaseService } from 'src/app/services/base.service'
 export class ViewProductComponent implements OnInit {
 	constructor(private service: BaseService, private route: ActivatedRoute) {
 		this.route.paramMap.subscribe((params: ParamMap) => {
+			this.products = []
 			this.category = params.get('name')
+			this.getCategory()
 		})
 	}
 
@@ -19,9 +21,7 @@ export class ViewProductComponent implements OnInit {
 	products: any[] = []
 	categoryInfo: any = {}
 
-	ngOnInit(): void {
-		this.getCategory()
-	}
+	ngOnInit(): void {}
 
 	getCategory() {
 		new BaseService(this.service.http, EndPoints.products, '')

@@ -16,7 +16,14 @@ export class ProductsComponent implements OnInit {
 
 	products: any[] = []
 
-	productsToShow = ['Lenses', 'Make-ups', 'Lashes', 'Serums']
+	productsToShow = [
+		'Lenses',
+		'Lashes',
+		'Make-ups',
+		'Eyeliner',
+		'Accessories',
+		'Serums',
+	]
 	getProducts() {
 		this.productsToShow.forEach((category: string) => {
 			new BaseService(this.service.http, EndPoints.products, '')

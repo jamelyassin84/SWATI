@@ -5,6 +5,8 @@
     height: 85px;
     align-items: center;
     margin-top: 36px;
+    position: fixed;
+    z-index: 9;
 }
 
 .menu {
@@ -43,4 +45,11 @@ ul {
     img {
         height: 32px;
     }
+}
+
+.hideNav {
+    opacity: 0;
+    height: 0;
+    padding: 0 !important;
+    overflow: hidden;
 }

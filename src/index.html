@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" id="body">
 
 <head>
     <meta charset="utf-8">
@@ -12,7 +12,29 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 
-<body>
+<body onscroll="onScroll()">
+    <div>
+        <button onclick="scrollToTop($event)" style="position: fixed; bottom: 20px; z-index: 1; right: 20px" class="btn btn-lg btn-dark">
+				<i class="fas fa-arrow-up"></i>
+			</button>
+    </div>
+
+    <script type="text/javascript">
+        var scrollTop = 0
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth',
+            })
+        }
+
+        function onScroll(event) {
+            const position = document.getElementById('body').scrollTop
+            localStorage.setItem('hideNav', scrollTop <= position)
+            scrollTop = position
+        }
+    </script>
     <app-root></app-root>
 </body>
 

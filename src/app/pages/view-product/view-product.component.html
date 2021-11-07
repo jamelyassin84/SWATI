@@ -1,5 +1,7 @@
 <app-promotions></app-promotions>
 <app-navbar></app-navbar>
+<div class="separator"></div>
+
 <div class="container ">
     <div class="row">
         <div class="col-md-12 mt-5">
@@ -10,6 +12,11 @@
         <div class="col-md-8 mt-5">
             <h1>{{category | titlecase}}</h1>
             <p> {{categoryInfo.description}}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 mt-5">
+            <p>Showing {{products.length}} Items</p>
         </div>
     </div>
     <div class="row mb-5">

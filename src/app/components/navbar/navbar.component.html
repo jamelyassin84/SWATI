@@ -1,19 +1,19 @@
-<div class="header__row-container d-flex">
+<div class="header__row-container d-flex" [class.hideNav]="!hideNav">
     <div class="menu">
         <i class="fas fa-bars"></i>
     </div>
-    <ul class="d-flex">
+    <ul class="d-flex" routerLink="/product/Lenses">
         <li>Colored Lenses</li>
     </ul>
-    <ul class="d-flex">
+    <ul class="d-flex" routerLink="/product/Make-up">
         <li>Make-up</li>
     </ul>
-    <ul class="d-flex">
+    <ul role="button" class="d-flex" routerLink="/home">
         <div class="swati_logo">
             <img src="../../../assets/images/logo.jpg" alt="">
         </div>
     </ul>
-    <ul class="d-flex">
+    <ul class="d-flex" routerLink="/product/Bundles">
         <li>Bundles & Sets</li>
     </ul>
     <ul class="d-flex">
