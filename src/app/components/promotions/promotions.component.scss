@@ -50,3 +50,17 @@
 .fa-heart {
     color: #FD7998;
 }
+
+@media only screen and (max-width: 1300px) {
+    .hidden-item {
+        display: none !important;
+    }
+    .content1 {
+        flex: none !important;
+    }
+    .content-2 {
+        // text-align: center !important;
+        // margin: 0 !important;
+        flex: none !important;
+    }
+}

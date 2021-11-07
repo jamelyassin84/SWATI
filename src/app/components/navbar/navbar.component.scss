@@ -1,3 +1,9 @@
+@media only screen and (max-width: 1300px) {
+    .nav-item {
+        display: none !important;
+    }
+}
+
 .header__row-container {
     transition: all .3s ease-in-out;
     background: #fff;
