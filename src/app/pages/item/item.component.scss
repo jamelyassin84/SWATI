@@ -1,7 +1,7 @@
     .imge-container {
         min-height: 70vh;
         cursor: pointer;
-        background-color: #F8F9FA;
+        background-color: #EBEBEB;
         border-radius: 5px;
         display: flex;
         align-items: center;
@@ -21,4 +21,19 @@
         border-top-right-radius: 0;
         border-top-left-radius: 0;
         text-transform: capitalize;
+    }
+    
+    .line-through {
+        text-decoration: line-through;
+        opacity: .5;
+    }
+    
+    .btn {
+        letter-spacing: .2em;
+        text-transform: uppercase;
+        border-radius: 0px !important;
+    }
+    
+    a {
+        cursor: pointer;
     }

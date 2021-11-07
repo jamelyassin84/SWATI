@@ -4,36 +4,50 @@
     <div class="row">
         <div class="col-md-6 mt-5">
             <div class="imge-container">
-                <img class="w-100" src="../../../assets/images/all.png" alt="">
+                <img class="w-100" [src]="productInfo.media.full" alt="">
             </div>
         </div>
         <div class="col-md-6 mt-5">
             <div class="d-flex">
-                <h1>ROYAL BUNDLE</h1>
+                <h1>{{productInfo.name}}</h1>
                 <span class="ml-auto">
-                    <span class="badge badge-danger "><h6>Save 40%  </h6></span>
+                    <span class="badge badge-danger "><h6>Save {{productInfo.discountPercent }}%  </h6></span>
                 </span>
             </div>
             <span class="text-muted">All the 8 shades</span>
             <div class="h4 text-danger mt-2 mb-5">40% off on bundles</div>
-            <p class="mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis non hic vero repellat officia molestiae minima eius perspiciatis, eos debitis? Repellendus, nam? Soluta ea, ex sequi dicta nisi vero labore! Lorem, ipsum dolor sit amet consectetur
-                adipisicing elit. Blanditiis non hic vero repellat officia molestiae minima eius perspiciatis, eos debitis? Repellendus, nam? Soluta ea, ex sequi dicta nisi vero labore!</p>
-            <h1>AED 1,146</h1>
-            <button class="btn btn-dark btn-lg mt-5">Add to Cart</button>
+            <p class="mt-2">{{productInfo.description}}</p>
+            <h1>
+                {{productInfo.priceAsNumber | currency : ' AED'}} <span class="text-muted line-through ">{{productInfo.priceBeforeDiscountAsNumber | currency : ' AED'}}</span>
+            </h1>
+            <button class="btn btn-dark btn-lg mt-5 w-100">Add to Cart</button>
+            <button class="btn btn-success btn-lg  w-100">Talk to an expert</button>
+            <button class="btn btn-danger btn-lg  w-100">Order Now!</button>
         </div>
-        <ul class="nav nav-tabs">
+        <ul class="nav nav-tabs mt-5 m-3 mb-5">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Active</a>
+                <a class="nav-link active">Glam Bundle</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link">Included in this Bundle</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link">Product Details</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <a class="nav-link">How to use</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">How to remove</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Share {{productInfo.name}}</a>
             </li>
         </ul>
+        <div class="div mb-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis autem tempore deleniti deserunt provident? Ab, aut sint perferendis culpa harum adipisci. Quidem quod hic ipsum amet ipsam, molestias pariatur? Eveniet. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Veritatis autem tempore deleniti deserunt provident? Ab, aut sint perferendis culpa harum adipisci. Quidem quod hic ipsum amet ipsam, molestias pariatur? Eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+            autem tempore deleniti deserunt provident? Ab, aut sint perferendis culpa harum adipisci. Quidem quod hic ipsum amet ipsam, molestias pariatur? Eveniet.
+        </div>
     </div>
 </div>
