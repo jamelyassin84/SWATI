@@ -1,0 +1,24 @@
+    .imge-container {
+        min-height: 70vh;
+        cursor: pointer;
+        background-color: #F8F9FA;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        padding: 20px
+    }
+    
+    img {
+        width: 100%;
+    }
+    
+    .title {
+        background: black;
+        width: 100%;
+        color: #FD7998;
+        border-radius: 5px;
+        padding: 10px;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        text-transform: capitalize;
+    }

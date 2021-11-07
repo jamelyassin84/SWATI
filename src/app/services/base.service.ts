@@ -15,9 +15,8 @@ export class BaseService {
 	headers() {
 		return {
 			headers: new HttpHeaders({
-				'Access-Control-Allow-Origin': 'http://localhost:1229',
-				Authorization: 'Bearer 1',
-				'Content-Type': [],
+				// Authorization: 'Bearer 1',
+				// 'Content-Type': [],
 			}),
 		}
 	}

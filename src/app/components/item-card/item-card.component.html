@@ -1,6 +1,6 @@
-<div routerLink="/product/1" title="View More" class="item-card mt-5">
+<div [routerLink]="'/product/'+route | lowercase" title="View More" class="item-card mt-5">
     <div class="imge-container">
-        <img src="../../../assets/images/all.png" alt="">
+        <img [src]="image? image:'../../../assets/images/all.png'" alt="">
     </div>
-    <h5 class="title">lash + blow cerum</h5>
+    <h5 class="title">{{title}}</h5>
 </div>

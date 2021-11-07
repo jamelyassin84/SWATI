@@ -6,4 +6,5 @@ export enum EndPoints {
 	countries = 'products',
 	languages = 'languages',
 	markets = 'markets',
+	categories = 'categories',
 }

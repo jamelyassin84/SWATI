@@ -14,11 +14,21 @@ export class ProductsComponent implements OnInit {
 		this.getProducts()
 	}
 
+	products: any[] = []
+
+	productsToShow = ['Lense', 'Make-up', 'Lashes', 'Serum']
 	getProducts() {
-		new BaseService(this.service.http, EndPoints.products, '')
-			.index()
-			.subscribe((data) => {
-				console.log(data)
-			})
+		this.productsToShow.forEach((category: string) => {
+			new BaseService(this.service.http, EndPoints.products, '')
+				.create({
+					limit: 1,
+					skipFirst: 0,
+					search: category,
+				})
+				.subscribe((data: any) => {
+					this.products.push(data.products[0])
+				})
+			console.log(this.products)
+		})
 	}
 }
