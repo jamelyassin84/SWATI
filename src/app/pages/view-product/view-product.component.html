@@ -1,1 +1,23 @@
-<p>view-product works!</p>
+<app-promotions></app-promotions>
+<app-navbar></app-navbar>
+<div class="container ">
+    <div class="row">
+        <div class="col-md-12 mt-5">
+            <div class="imge-container">
+                <img class="w-100" src="../../../assets/images/all.png" alt="">
+            </div>
+        </div>
+        <div class="col-md-6 mt-5">
+            <h1>COLORED LENSES</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis non hic vero repellat officia molestiae minima eius perspiciatis, eos debitis? Repellendus, nam? Soluta ea, ex sequi dicta nisi vero labore! Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Blanditiis non hic vero repellat officia molestiae minima eius perspiciatis, eos debitis? Repellendus, nam? Soluta ea, ex sequi dicta nisi vero labore!</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3" *ngFor="let item of [1,2,3,4]">
+                <app-item-card></app-item-card>
+            </div>
+        </div>
+    </div>
+</div>
