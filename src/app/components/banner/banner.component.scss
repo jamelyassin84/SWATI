@@ -1,0 +1,17 @@
+.marquee-image {
+    -webkit-animation: background-marquee 100s infinite linear;
+    animation: background-marquee 10s infinite linear;
+    background-size: contain;
+    background-repeat: repeat-x;
+    height: 50px;
+    background-image: url(https://images.prismic.io/swati/2c5a8720-9797-4c6a-b104-ef6a74611794_marquee-image.jpg?auto=compress,format&rect=0,0,636,100&w=636&h=100);
+}
+
+@keyframes background-marquee {
+    0% {
+        background-position: 400px;
+    }
+    100% {
+        background-position: 0;
+    }
+}
