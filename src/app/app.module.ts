@@ -1,18 +1,35 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module'
+import { AppComponent } from './app.component'
+import { PromotionsComponent } from './components/promotions/promotions.component'
+import { NavbarComponent } from './components/navbar/navbar.component'
+import { ContentComponent } from './components/content/content.component'
+import { SignUpComponent } from './components/sign-up/sign-up.component'
+import { VipAccessComponent } from './components/vip-access/vip-access.component'
+import { ProductsComponent } from './components/products/products.component'
+import { HomeComponent } from './pages/home/home.component'
+import { ViewProductComponent } from './pages/view-product/view-product.component'
+import { ItemComponent } from './pages/item/item.component';
+import { BannerComponent } from './components/banner/banner.component'
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent,
+		PromotionsComponent,
+		NavbarComponent,
+		ContentComponent,
+		SignUpComponent,
+		VipAccessComponent,
+		ProductsComponent,
+		ViewProductComponent,
+		ItemComponent,
+		HomeComponent,
+  BannerComponent,
+	],
+	imports: [BrowserModule, AppRoutingModule],
+	providers: [],
+	bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

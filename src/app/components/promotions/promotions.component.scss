@@ -1,0 +1,52 @@
+.header__toolbar {
+    color: #fff;
+    height: 36px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .6875rem;
+    letter-spacing: .1rem;
+    padding: 0 2rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-transform: uppercase;
+    z-index: 3;
+    background: #000000;
+    width: 100%;
+}
+
+.content-1,
+.content-2,
+.content-3 {
+    flex: 1;
+    text-align: center;
+    align-items: center;
+}
+
+.content-3 {
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.promo {
+    align-self: center;
+    margin: auto;
+}
+
+.language {}
+
+.personalise-label {}
+
+.fas,
+.fal {
+    font-size: 1rem;
+}
+
+.fa-heart {
+    color: #FD7998;
+}
