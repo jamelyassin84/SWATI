@@ -15,7 +15,8 @@ import { ViewProductComponent } from './pages/view-product/view-product.componen
 import { ItemComponent } from './pages/item/item.component'
 import { BannerComponent } from './components/banner/banner.component'
 import { ItemCardComponent } from './components/item-card/item-card.component';
-import { ItemCardWithPriceComponent } from './components/item-card-with-price/item-card-with-price.component'
+import { ItemCardWithPriceComponent } from './components/item-card-with-price/item-card-with-price.component';
+import { ResolveImageDirective } from './directives/resolve-image.directive'
 
 @NgModule({
 	declarations: [
@@ -32,6 +33,7 @@ import { ItemCardWithPriceComponent } from './components/item-card-with-price/it
 		BannerComponent,
 		ItemCardComponent,
   ItemCardWithPriceComponent,
+  ResolveImageDirective,
 	],
 	imports: [BrowserModule, AppRoutingModule, HttpClientModule],
 	providers: [],

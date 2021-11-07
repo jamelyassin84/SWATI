@@ -32,7 +32,6 @@ export class ItemComponent implements OnInit {
 			.show(this.product)
 			.subscribe((data) => {
 				this.productInfo = data.product
-				console.log(data.product)
 			})
 	}
 }

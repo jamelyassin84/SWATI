@@ -35,7 +35,6 @@ export class ProductsComponent implements OnInit {
 				.subscribe((data: any) => {
 					this.products.push(data.products[0])
 				})
-			console.log(this.products)
 		})
 	}
 }

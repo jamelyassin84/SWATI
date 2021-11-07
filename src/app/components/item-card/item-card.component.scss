@@ -12,13 +12,16 @@
         width: 100%;
     }
     .title {
-        background: black;
+        background: #FD7998;
         width: 100%;
-        color: #FD7998;
+        color: white;
         border-radius: 5px;
         padding: 10px;
         border-top-right-radius: 0;
         border-top-left-radius: 0;
         text-transform: capitalize;
+    }
+    &:hover {
+        box-shadow: 0px 0px 15px gray !important;
     }
 }

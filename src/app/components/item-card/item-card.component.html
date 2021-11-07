@@ -1,6 +1,6 @@
 <div [routerLink]="'/product/'+route | lowercase" title="View More" class="item-card mt-5">
     <div class="imge-container">
-        <img [src]="image? image:'../../../assets/images/all.png'" alt="">
+        <img appResolveImage [src]="image? image:'../../../assets/images/all.png'" alt="">
     </div>
     <h5 class="title">{{title}}</h5>
 </div>

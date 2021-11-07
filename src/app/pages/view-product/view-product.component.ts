@@ -31,7 +31,6 @@ export class ViewProductComponent implements OnInit {
 			.subscribe((data) => {
 				this.categoryInfo = data.products[0]
 				this.products = data.products
-				console.log(this.products)
 			})
 	}
 }
