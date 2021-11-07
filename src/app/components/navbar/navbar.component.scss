@@ -44,6 +44,15 @@ ul {
         text-align: center;
         height: 100%;
         cursor: pointer;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &:hover {
+        .fa-chevron-down {
+            transform: rotate(-180deg);
+            transition: .3s ease;
+        }
     }
 }
 
@@ -58,4 +67,8 @@ ul {
     height: 0;
     padding: 0 !important;
     overflow: hidden;
+}
+
+.fa-chevron-down {
+    font-size: .8rem;
 }

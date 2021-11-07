@@ -1,12 +1,20 @@
 <div class="header__row-container d-flex" [class.hideNav]="!hideNav">
-    <div class="menu">
+    <div class="menu" role="button">
         <i class="fas fa-bars"></i>
     </div>
     <ul class="d-flex nav-item" routerLink="/product/Lenses">
-        <li>Colored Lenses</li>
+        <li>Colored Lenses
+            <span>
+                <i class="fas fa-chevron-down ml-2"></i>
+            </span>
+        </li>
     </ul>
     <ul class="d-flex nav-item" routerLink="/product/Make-up">
-        <li>Make-up</li>
+        <li>Make-up
+            <span>
+                <i class="fas fa-chevron-down ml-2"></i>
+            </span>
+        </li>
     </ul>
     <ul role="button" class="d-flex" routerLink="/home">
         <div class="swati_logo">
@@ -14,10 +22,18 @@
         </div>
     </ul>
     <ul class="d-flex nav-item" routerLink="/product/Bundles">
-        <li>Bundles & Sets</li>
+        <li>Bundles & Sets
+            <span>
+                <i class="fas fa-chevron-down ml-2"></i>
+            </span>
+        </li>
     </ul>
     <ul class="d-flex nav-item">
-        <li>Reviews</li>
+        <li>Reviews
+            <span>
+                <i class="fas fa-chevron-down ml-2"></i>
+            </span>
+        </li>
     </ul>
 
 </div>
